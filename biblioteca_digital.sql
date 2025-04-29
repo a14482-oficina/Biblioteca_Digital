@@ -67,8 +67,6 @@ CREATE TABLE `requesitos` (
 -- Extraindo dados da tabela `requesitos`
 --
 
-INSERT INTO `requesitos` (`id`, `id_utilizador`, `id_livro`, `inicio`, `fim`, `estado`, `verif_entrega`) VALUES
-(13, 11, 23, '2025-04-29', '2025-05-29', 'aceite', 0);
 
 -- --------------------------------------------------------
 
@@ -93,9 +91,8 @@ CREATE TABLE `utilizador` (
 
 INSERT INTO `utilizador` (`id`, `image`, `nome`, `telefone`, `username`, `email`, `password`, `estado`) VALUES
 (10, 'food-1.png', 'Teste_admin', '+351923457830', 'admin', 'admin@gmail.com', '$2y$10$2foiU8IEcsZbfl4qwevHruohCKPadiHr2AZMt/Dlvy6DRBuH.a7gi', 1),
-(11, 'profile-pic.png', 'teste_cliente', '+351983475328', 'teste_cliente', 'cliente@gmail.com', '$2y$10$/fOcS4MkZ0beiVWTyxOrA.n6jpiax8fRcJWG6oQIBeLdItwbh3W1S', 0),
-(12, 'profile-pic.png', 'teste_apresentacao', '+351901234623', 'teste_apresentacao', 'teste_apresentacao@gmail.com', '$2y$10$ynkWlA2.g1d65JDv7JUA.OP3XoWbo7U.sV24rqhGeMvjpc3XstcD.', 0),
-(13, 'profile-pic.png', 'testenun', '+351963258741', 'teste_num', 'testenun@gmail.com', '$2y$10$ycY05h3xWk72NeI3wHW4KeH7NR1syGpjx6wLO7PgN0GADSzN8iiwi', 0);
+(11, 'profile-pic.png', 'teste_cliente', '+351983475328', 'teste_cliente', 'cliente@gmail.com', '$2y$10$/fOcS4MkZ0beiVWTyxOrA.n6jpiax8fRcJWG6oQIBeLdItwbh3W1S', 0);
+
 
 --
 -- Índices para tabelas despejadas
