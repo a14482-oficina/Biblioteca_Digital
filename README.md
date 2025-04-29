@@ -40,4 +40,4 @@ Este é um sistema CRUD simples para gerenciamento de uma biblioteca digital.
         ├── ver_requesitados.php
 ├── /uploaded_book_img/         
 ├── /uploaded_profile_img/            
-´´´ bash
+´´´
