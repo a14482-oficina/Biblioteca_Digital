@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql204.byetcluster.com
--- Tempo de geração: 27-Abr-2025 às 16:01
+-- Tempo de geração: 29-Abr-2025 às 06:04
 -- Versão do servidor: 10.6.19-MariaDB
 -- versão do PHP: 7.2.22
 
@@ -45,12 +45,7 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`id`, `image`, `nome`, `autor`, `lancamento`, `preco`, `idioma`, `categoria`, `stock`) VALUES
-(7, 'livro_68012322544fc6.92861402.jpg', 'teste', 'teste', '24/03/2020', 32, 'InglÃªs', 'teste', 0),
-(8, 'gemini-image-1742855661253-removebg-preview.png', 'teste_edit_livro', 'Martin Moniz', '24/03/2020', 43, 'Latim', 'teste', 23),
-(14, 'IMG_20250401_220014924.jpg', 'yupie', 'Martin Moniz', '24/03/2020', 23, 'Latim', 'Romance', 23),
-(17, 'livro_680106223ce8a7.65766477.png', 'teste_unico', 'Martin Moniz', '24/03/2020', 12, 'InglÃªs', 'Romance', 13),
-(20, 'livro_680121966ecbb7.59950450.png', 'teste', 'Martin Moniz', '24/03/2020', 13, 'InglÃªs', 'aventura', 14),
-(21, 'livro_6801336471bab1.15917549.png', 'teste_mario', 'mario', '24/03/2020', 100, 'InglÃªs', 'fortnite', 34);
+(23, 'livro_680f4274cfc844.45579590.jpg', 'teste', 'teste', '24/02/2025', 23, 'espanhol', 'aventura', 23);
 
 -- --------------------------------------------------------
 
@@ -73,13 +68,7 @@ CREATE TABLE `requesitos` (
 --
 
 INSERT INTO `requesitos` (`id`, `id_utilizador`, `id_livro`, `inicio`, `fim`, `estado`, `verif_entrega`) VALUES
-(6, 5, 7, '2025-04-22', '2025-04-23', 'aceite', 0),
-(5, 6, 7, '2025-04-18', '2025-04-30', 'pendente', 0),
-(4, 5, 7, '2025-04-17', '2025-04-24', 'atrasado', 0),
-(7, 5, 7, '2025-04-22', '2025-04-25', 'atrasado', 0),
-(8, 5, 7, '2025-04-23', '2025-04-26', 'atrasado', 0),
-(9, 5, 7, '2025-07-28', '2025-07-31', 'aceite', 0),
-(10, 5, 7, '2025-05-19', '2025-05-21', 'pendente', 0);
+(13, 11, 23, '2025-04-29', '2025-05-29', 'aceite', 0);
 
 -- --------------------------------------------------------
 
@@ -103,11 +92,10 @@ CREATE TABLE `utilizador` (
 --
 
 INSERT INTO `utilizador` (`id`, `image`, `nome`, `telefone`, `username`, `email`, `password`, `estado`) VALUES
-(5, 'gemini-image-1742855661253-removebg-preview.png', 'eusouomaior', '123', 'teste', 'teste@teste.com', '$2y$10$F1SR/rH0b2izx8tkMWbzm.bF7kSWdDNA40L77jsPGWHJQkcqoWaZW', 0),
-(6, 'perfil_680108fed3e064.61558858.jpg', 'teste_edit5', '342', 'teste_edit', 'fredericogouveia21@gmail.com', '$2y$10$1u8EUcKO.HAHnBAQGhPBDePwx8KVhBW3LV/PacC9KYRzVNJ4seS5y', 1),
-(7, 'website.jpg', 'teste_registo', '12345678', 'teste_registo', 'testeregisto@gmail.com', '$2y$10$x8470/nlHHdwgXMfc1DcI.G89M00XlVdfusnhzGI1295cl7LMHUj.', 0),
-(8, 'profile-pic.png', 'teste_numero_email', '+351987657483', 'teste_numero_email', 'teste_numero_email@gmail.com', '$2y$10$JV3pOsp1YSY4MILvM65ZDO.IazcsmfNPI2NO2ViszKkYFyoLaMhCe', 0),
-(9, '1000017091.jpg', 'Ferreira', '+351915714419', 'Ferreira', 'a14563@oficina.pt', '$2y$10$v7ePqnVcF8T0RMt9E57P6.3RvCGA0rLT1b12ongPTOoiEGZq7izM2', 0);
+(10, 'food-1.png', 'Teste_admin', '+351923457830', 'admin', 'admin@gmail.com', '$2y$10$2foiU8IEcsZbfl4qwevHruohCKPadiHr2AZMt/Dlvy6DRBuH.a7gi', 1),
+(11, 'profile-pic.png', 'teste_cliente', '+351983475328', 'teste_cliente', 'cliente@gmail.com', '$2y$10$/fOcS4MkZ0beiVWTyxOrA.n6jpiax8fRcJWG6oQIBeLdItwbh3W1S', 0),
+(12, 'profile-pic.png', 'teste_apresentacao', '+351901234623', 'teste_apresentacao', 'teste_apresentacao@gmail.com', '$2y$10$ynkWlA2.g1d65JDv7JUA.OP3XoWbo7U.sV24rqhGeMvjpc3XstcD.', 0),
+(13, 'profile-pic.png', 'testenun', '+351963258741', 'teste_num', 'testenun@gmail.com', '$2y$10$ycY05h3xWk72NeI3wHW4KeH7NR1syGpjx6wLO7PgN0GADSzN8iiwi', 0);
 
 --
 -- Índices para tabelas despejadas
@@ -139,19 +127,19 @@ ALTER TABLE `utilizador`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de tabela `requesitos`
 --
 ALTER TABLE `requesitos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `utilizador`
 --
 ALTER TABLE `utilizador`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
