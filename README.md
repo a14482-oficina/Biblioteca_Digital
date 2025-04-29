@@ -17,4 +17,4 @@ Este é um sistema CRUD simples para gerenciamento de uma biblioteca digital.
 
 - PHP
 - Alojamento-gratis(alojamento)
-- SQL (base de dados)
+- mySQL (base de dados)
